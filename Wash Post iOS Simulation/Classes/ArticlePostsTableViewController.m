@@ -9,6 +9,7 @@
 #import "ArticlePostsTableViewController.h"
 #import "ArticlePostCell.h"
 #import "ArticlePostFetcher.h"
+#import "ArticlePostViewController.h"
 
 
 @interface ArticlePostsTableViewController ()
@@ -28,6 +29,7 @@
     [super viewDidLoad];
     
     [self loadArticlePostsFromApi];
+
 }
 
 
@@ -93,6 +95,18 @@
     
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    
+    ArticlePostViewController *articlePostVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ArticlePostVC"];
+    
+    articlePostVC.articlePost = self.articlePosts[indexPath.row];
+    
+    [self.navigationController pushViewController:articlePostVC animated:YES];
+
+}
+
 
 
 @end

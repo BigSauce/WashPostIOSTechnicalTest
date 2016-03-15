@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ArticlePost.h"
 
 @interface ArticlePostViewController : UIViewController
+
+/// article post to display
+@property (strong, nonatomic) ArticlePost *articlePost;
 
 @end
