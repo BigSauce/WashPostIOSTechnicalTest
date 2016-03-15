@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9DD2D06B67783187AA35990F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F8DC97D693DF56620BE55B /* libPods.a */; };
 		FA5AE52F1C98A01200648B3B /* ArticlePostFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE52E1C98A01200648B3B /* ArticlePostFetcherTests.m */; };
+		FA5AE5321C98A60100648B3B /* ArticlePostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE5311C98A60100648B3B /* ArticlePostCell.m */; };
+		FA5AE5341C98ABBE00648B3B /* ArticlePostParsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE5331C98ABBE00648B3B /* ArticlePostParsingTests.m */; };
+		FA5AE5371C98AE8900648B3B /* ArticlePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE5361C98AE8900648B3B /* ArticlePostViewController.m */; };
 		FACCFC611C98897D00A882E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC601C98897D00A882E7 /* main.m */; };
 		FACCFC641C98897D00A882E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC631C98897D00A882E7 /* AppDelegate.m */; };
 		FACCFC6A1C98897D00A882E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACCFC681C98897D00A882E7 /* Main.storyboard */; };
@@ -36,6 +39,11 @@
 		B8F8DC97D693DF56620BE55B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C030503CB583BF894CF4C94C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA5AE52E1C98A01200648B3B /* ArticlePostFetcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostFetcherTests.m; path = Classes/ArticlePostFetcherTests.m; sourceTree = "<group>"; };
+		FA5AE5301C98A60100648B3B /* ArticlePostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlePostCell.h; path = Classes/ArticlePostCell.h; sourceTree = "<group>"; };
+		FA5AE5311C98A60100648B3B /* ArticlePostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostCell.m; path = Classes/ArticlePostCell.m; sourceTree = "<group>"; };
+		FA5AE5331C98ABBE00648B3B /* ArticlePostParsingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostParsingTests.m; path = Classes/ArticlePostParsingTests.m; sourceTree = "<group>"; };
+		FA5AE5351C98AE8900648B3B /* ArticlePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlePostViewController.h; path = Classes/ArticlePostViewController.h; sourceTree = "<group>"; };
+		FA5AE5361C98AE8900648B3B /* ArticlePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostViewController.m; path = Classes/ArticlePostViewController.m; sourceTree = "<group>"; };
 		FACCFC5C1C98897D00A882E7 /* Wash Post iOS Simulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wash Post iOS Simulation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACCFC601C98897D00A882E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FACCFC621C98897D00A882E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +164,11 @@
 				FACCFC951C98982400A882E7 /* ArticlePostFetcher.h */,
 				FACCFC961C98982400A882E7 /* ArticlePostFetcher.m */,
 				FA5AE52E1C98A01200648B3B /* ArticlePostFetcherTests.m */,
+				FA5AE5331C98ABBE00648B3B /* ArticlePostParsingTests.m */,
+				FA5AE5301C98A60100648B3B /* ArticlePostCell.h */,
+				FA5AE5311C98A60100648B3B /* ArticlePostCell.m */,
+				FA5AE5351C98AE8900648B3B /* ArticlePostViewController.h */,
+				FA5AE5361C98AE8900648B3B /* ArticlePostViewController.m */,
 			);
 			name = "Viewing Posts";
 			sourceTree = "<group>";
@@ -322,10 +335,12 @@
 			files = (
 				FACCFC641C98897D00A882E7 /* AppDelegate.m in Sources */,
 				FACCFC8D1C988EBA00A882E7 /* NSDictionary+SLAdditions.m in Sources */,
+				FA5AE5321C98A60100648B3B /* ArticlePostCell.m in Sources */,
 				FACCFC971C98982400A882E7 /* ArticlePostFetcher.m in Sources */,
 				FACCFC611C98897D00A882E7 /* main.m in Sources */,
 				FACCFC891C988C6800A882E7 /* ArticlePost.m in Sources */,
 				FACCFC941C9897C000A882E7 /* ArticlePostsTableViewController.m in Sources */,
+				FA5AE5371C98AE8900648B3B /* ArticlePostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5AE52F1C98A01200648B3B /* ArticlePostFetcherTests.m in Sources */,
+				FA5AE5341C98ABBE00648B3B /* ArticlePostParsingTests.m in Sources */,
 				FACCFC7A1C98897D00A882E7 /* Wash_Post_iOS_SimulationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

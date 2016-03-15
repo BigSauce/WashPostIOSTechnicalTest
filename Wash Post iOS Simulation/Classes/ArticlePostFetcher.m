@@ -22,7 +22,9 @@
     AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
     
-    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, NSDictionary *responseDict) {
+    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        
+        NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:responseObject options:nil error:nil];
         
         NSArray *parsedArticlePosts = [self parsedArticlesFromSuccessResponseDictionary:responseDict];
         
