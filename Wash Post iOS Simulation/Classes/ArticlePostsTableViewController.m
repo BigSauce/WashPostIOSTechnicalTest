@@ -8,8 +8,6 @@
 
 #import "ArticlePostsTableViewController.h"
 
-#define kApiEndpoint @"http://www.washingtonpost.com/wp-srv/simulation/simulation_test.json"
-
 
 @implementation ArticlePostsTableViewController
 
