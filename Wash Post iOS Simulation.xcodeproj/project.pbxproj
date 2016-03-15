@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		FACCFC611C98897D00A882E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC601C98897D00A882E7 /* main.m */; };
 		FACCFC641C98897D00A882E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC631C98897D00A882E7 /* AppDelegate.m */; };
-		FACCFC671C98897D00A882E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC661C98897D00A882E7 /* ViewController.m */; };
 		FACCFC6A1C98897D00A882E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACCFC681C98897D00A882E7 /* Main.storyboard */; };
 		FACCFC6C1C98897D00A882E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACCFC6B1C98897D00A882E7 /* Assets.xcassets */; };
 		FACCFC6F1C98897D00A882E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACCFC6D1C98897D00A882E7 /* LaunchScreen.storyboard */; };
 		FACCFC7A1C98897D00A882E7 /* Wash_Post_iOS_SimulationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC791C98897D00A882E7 /* Wash_Post_iOS_SimulationTests.m */; };
+		FACCFC891C988C6800A882E7 /* ArticlePost.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC881C988C6800A882E7 /* ArticlePost.m */; };
+		FACCFC8D1C988EBA00A882E7 /* NSDictionary+SLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC8C1C988EBA00A882E7 /* NSDictionary+SLAdditions.m */; };
+		FACCFC941C9897C000A882E7 /* ArticlePostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC931C9897C000A882E7 /* ArticlePostsTableViewController.m */; };
+		FACCFC971C98982400A882E7 /* ArticlePostFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FACCFC961C98982400A882E7 /* ArticlePostFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +34,6 @@
 		FACCFC601C98897D00A882E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FACCFC621C98897D00A882E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FACCFC631C98897D00A882E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FACCFC651C98897D00A882E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FACCFC661C98897D00A882E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FACCFC691C98897D00A882E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FACCFC6B1C98897D00A882E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FACCFC6E1C98897D00A882E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,14 @@
 		FACCFC751C98897D00A882E7 /* Wash Post iOS SimulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wash Post iOS SimulationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACCFC791C98897D00A882E7 /* Wash_Post_iOS_SimulationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wash_Post_iOS_SimulationTests.m; sourceTree = "<group>"; };
 		FACCFC7B1C98897D00A882E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACCFC871C988C6800A882E7 /* ArticlePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlePost.h; path = Classes/ArticlePost.h; sourceTree = "<group>"; };
+		FACCFC881C988C6800A882E7 /* ArticlePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePost.m; path = Classes/ArticlePost.m; sourceTree = "<group>"; };
+		FACCFC8B1C988EBA00A882E7 /* NSDictionary+SLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SLAdditions.h"; path = "Classes/NSDictionary+SLAdditions.h"; sourceTree = "<group>"; };
+		FACCFC8C1C988EBA00A882E7 /* NSDictionary+SLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SLAdditions.m"; path = "Classes/NSDictionary+SLAdditions.m"; sourceTree = "<group>"; };
+		FACCFC921C9897C000A882E7 /* ArticlePostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlePostsTableViewController.h; path = Classes/ArticlePostsTableViewController.h; sourceTree = "<group>"; };
+		FACCFC931C9897C000A882E7 /* ArticlePostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostsTableViewController.m; path = Classes/ArticlePostsTableViewController.m; sourceTree = "<group>"; };
+		FACCFC951C98982400A882E7 /* ArticlePostFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlePostFetcher.h; path = Classes/ArticlePostFetcher.h; sourceTree = "<group>"; };
+		FACCFC961C98982400A882E7 /* ArticlePostFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlePostFetcher.m; path = Classes/ArticlePostFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,10 @@
 		FACCFC5E1C98897D00A882E7 /* Wash Post iOS Simulation */ = {
 			isa = PBXGroup;
 			children = (
+				FACCFC8A1C988E9B00A882E7 /* Categories */,
+				FACCFC841C988BE500A882E7 /* Viewing Posts */,
 				FACCFC621C98897D00A882E7 /* AppDelegate.h */,
 				FACCFC631C98897D00A882E7 /* AppDelegate.m */,
-				FACCFC651C98897D00A882E7 /* ViewController.h */,
-				FACCFC661C98897D00A882E7 /* ViewController.m */,
 				FACCFC681C98897D00A882E7 /* Main.storyboard */,
 				FACCFC6B1C98897D00A882E7 /* Assets.xcassets */,
 				FACCFC6D1C98897D00A882E7 /* LaunchScreen.storyboard */,
@@ -109,6 +118,28 @@
 				FACCFC7B1C98897D00A882E7 /* Info.plist */,
 			);
 			path = "Wash Post iOS SimulationTests";
+			sourceTree = "<group>";
+		};
+		FACCFC841C988BE500A882E7 /* Viewing Posts */ = {
+			isa = PBXGroup;
+			children = (
+				FACCFC871C988C6800A882E7 /* ArticlePost.h */,
+				FACCFC881C988C6800A882E7 /* ArticlePost.m */,
+				FACCFC921C9897C000A882E7 /* ArticlePostsTableViewController.h */,
+				FACCFC931C9897C000A882E7 /* ArticlePostsTableViewController.m */,
+				FACCFC951C98982400A882E7 /* ArticlePostFetcher.h */,
+				FACCFC961C98982400A882E7 /* ArticlePostFetcher.m */,
+			);
+			name = "Viewing Posts";
+			sourceTree = "<group>";
+		};
+		FACCFC8A1C988E9B00A882E7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FACCFC8B1C988EBA00A882E7 /* NSDictionary+SLAdditions.h */,
+				FACCFC8C1C988EBA00A882E7 /* NSDictionary+SLAdditions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACCFC671C98897D00A882E7 /* ViewController.m in Sources */,
 				FACCFC641C98897D00A882E7 /* AppDelegate.m in Sources */,
+				FACCFC8D1C988EBA00A882E7 /* NSDictionary+SLAdditions.m in Sources */,
+				FACCFC971C98982400A882E7 /* ArticlePostFetcher.m in Sources */,
 				FACCFC611C98897D00A882E7 /* main.m in Sources */,
+				FACCFC891C988C6800A882E7 /* ArticlePost.m in Sources */,
+				FACCFC941C9897C000A882E7 /* ArticlePostsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wash Post iOS Simulation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bigsauce.Wash-Post-iOS-Simulation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovargas.Wash-Post-iOS-Simulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wash Post iOS Simulation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bigsauce.Wash-Post-iOS-Simulation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovargas.Wash-Post-iOS-Simulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

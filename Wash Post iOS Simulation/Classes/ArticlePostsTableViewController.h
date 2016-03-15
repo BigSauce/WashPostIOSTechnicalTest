@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ArticlePostsTableViewController.h
 //  Wash Post iOS Simulation
 //
 //  Created by Alejandro Vargas on 3/15/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+/// Shows a list of article posts from the Washington Post
+@interface ArticlePostsTableViewController : UITableViewController
 
 @end
-
