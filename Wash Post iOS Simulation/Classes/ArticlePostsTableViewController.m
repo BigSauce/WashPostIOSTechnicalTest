@@ -11,11 +11,25 @@
 #import "ArticlePostFetcher.h"
 #import "ArticlePostViewController.h"
 
+#define kSortByTitle 0
+#define kSortOrderAscending 0
+
+typedef NS_ENUM(NSInteger, SortMethod) {
+    SortMethodByTitle = 0,
+    SortMethodByDate
+};
+
 
 @interface ArticlePostsTableViewController ()
 
 /// list of retrieved article posts for displaying in the table view
 @property (strong, nonatomic) NSArray<ArticlePost *> *articlePosts;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sortBySegmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sortOrderSegmentedControl;
+
+@property (assign, nonatomic) SortMethod sortMethod;
+@property (assign, nonatomic) BOOL sortAscending;
 
 @end
 
@@ -28,6 +42,8 @@
     
     [super viewDidLoad];
     
+    [self refreshSortFlags];
+    
     [self loadArticlePostsFromApi];
 
 }
@@ -39,7 +55,7 @@
     
     [ArticlePostFetcher fetchArticlePostsWithSuccess:^(NSArray<ArticlePost *> *articlePosts) {
         
-        self.articlePosts = articlePosts;
+        self.articlePosts = [self sortedArticlePosts:articlePosts];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
@@ -54,6 +70,43 @@
         
         [self presentViewController:alertController animated:YES completion:nil];
     }];
+}
+
+- (void)refreshSortFlags {
+    
+    self.sortMethod = (SortMethod) self.sortBySegmentedControl.selectedSegmentIndex;
+    self.sortAscending = self.sortOrderSegmentedControl.selectedSegmentIndex == 0;
+}
+
+- (void)sortLoadedArticlePosts {
+    
+    [self refreshSortFlags];
+    
+    self.articlePosts = [self sortedArticlePosts:self.articlePosts];
+    
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+
+#pragma mark - Convenience
+
+/**
+ *  Returns an array of sorted article posts according to the sort flags set by the user.
+ *
+ *  @param articlePosts array of not-necessarily-sorted article posts
+ *
+ **/
+- (NSArray *)sortedArticlePosts:(NSArray <ArticlePost *> *)articlePosts {
+    
+    if (!articlePosts || !articlePosts.count)
+        return nil;
+    
+    
+    NSString *sortKey = (self.sortMethod == SortMethodByTitle) ? @"title" : @"date";
+    
+    NSArray *sortedArray = [articlePosts sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:sortKey ascending:self.sortAscending] ]];
+    
+    return sortedArray;
 }
 
 
@@ -105,6 +158,19 @@
     
     [self.navigationController pushViewController:articlePostVC animated:YES];
 
+}
+
+
+#pragma mark - IBActions
+
+- (IBAction)sortByValueChanged:(id)sender {
+    
+    [self sortLoadedArticlePosts];
+}
+
+- (IBAction)sortOrderValueChanged:(id)sender {
+    
+    [self sortLoadedArticlePosts];
 }
 
 
