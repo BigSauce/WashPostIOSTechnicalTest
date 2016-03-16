@@ -3,6 +3,7 @@
 In the time allotted, I was able to create a crude app which includes the following (in the technical-test branch):
 * UI - articles controller and article detail controller
 * Articles are loaded and parsed from the Washington Post Api and displayed in respective view controllers.
+* support for landscape orientation
 * unit tests
 
 Did not have time to:
