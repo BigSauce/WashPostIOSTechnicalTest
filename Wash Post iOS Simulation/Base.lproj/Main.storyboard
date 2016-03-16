@@ -14,6 +14,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="NI0-hT-Cac">
+                            <rect key="frame" x="0.0" y="221" width="600" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE0-yO-bbe">
+                                    <rect key="frame" x="8" y="24" width="53" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="UMV-Uh-u67"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-jQ-uvw">
+                                    <rect key="frame" x="69" y="21" width="87" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="Z40-D6-EGG"/>
+                                        <constraint firstAttribute="width" constant="87" id="nCL-re-RGM"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="Title"/>
+                                        <segment title="Date"/>
+                                    </segments>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </segmentedControl>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Order" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md9-Fe-KyF">
+                                    <rect key="frame" x="8" y="80" width="77" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="WbH-TH-g0X"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pKK-kr-HaV">
+                                    <rect key="frame" x="93" y="77" width="207" height="29"/>
+                                    <segments>
+                                        <segment title="Ascending ↓"/>
+                                        <segment title="Descending ↑"/>
+                                    </segments>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95718053073594067" green="0.95718053073594067" blue="0.95718053073594067" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="kE0-yO-bbe" firstAttribute="centerY" secondItem="NI0-hT-Cac" secondAttribute="centerY" id="5Uk-eX-qD7"/>
+                                <constraint firstItem="kE0-yO-bbe" firstAttribute="leading" secondItem="NI0-hT-Cac" secondAttribute="leading" constant="8" id="ENY-fL-6py"/>
+                                <constraint firstItem="pKK-kr-HaV" firstAttribute="centerY" secondItem="md9-Fe-KyF" secondAttribute="centerY" id="I6D-OH-CHQ"/>
+                                <constraint firstItem="md9-Fe-KyF" firstAttribute="centerY" secondItem="NI0-hT-Cac" secondAttribute="centerY" id="JbI-KT-KxZ"/>
+                                <constraint firstItem="pKK-kr-HaV" firstAttribute="leading" secondItem="md9-Fe-KyF" secondAttribute="trailing" constant="8" id="T1h-hB-oWM"/>
+                                <constraint firstAttribute="bottom" secondItem="md9-Fe-KyF" secondAttribute="bottom" constant="19" id="UsU-jW-Sus"/>
+                                <constraint firstItem="pKK-kr-HaV" firstAttribute="centerY" secondItem="NI0-hT-Cac" secondAttribute="centerY" id="afR-cO-K8y"/>
+                                <constraint firstItem="kE0-yO-bbe" firstAttribute="top" secondItem="NI0-hT-Cac" secondAttribute="top" constant="24" id="diR-lW-O7u"/>
+                                <constraint firstItem="uMV-jQ-uvw" firstAttribute="leading" secondItem="kE0-yO-bbe" secondAttribute="trailing" constant="8" id="epB-wf-WMG"/>
+                                <constraint firstItem="md9-Fe-KyF" firstAttribute="leading" secondItem="NI0-hT-Cac" secondAttribute="leading" constant="8" id="kjn-8j-Khm"/>
+                                <constraint firstItem="uMV-jQ-uvw" firstAttribute="centerY" secondItem="NI0-hT-Cac" secondAttribute="centerY" id="ndI-eW-bGG"/>
+                                <constraint firstItem="uMV-jQ-uvw" firstAttribute="centerY" secondItem="kE0-yO-bbe" secondAttribute="centerY" id="sph-Xx-7lf"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="5Uk-eX-qD7"/>
+                                    <exclude reference="JbI-KT-KxZ"/>
+                                    <exclude reference="ndI-eW-bGG"/>
+                                    <exclude reference="afR-cO-K8y"/>
+                                </mask>
+                            </variation>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArticlePostCell" rowHeight="129" id="jDC-Gt-XVA" customClass="ArticlePostCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="129"/>
