@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSString *excerpt;
 @property (strong, nonatomic) NSDate *date;
 
+/// Returns an ArticlePost instance from a json dictionary.
 + (ArticlePost *)articlePostFromJson:(NSDictionary *)jsonDict;
 
 /**
@@ -35,5 +36,9 @@
  * @param dictionary - json dictionary from which to initialize
  **/
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+
+/// Returns string representation of date property or empty string if date property is nil.
+- (NSString *)stringRepresentationForDate;
 
 @end

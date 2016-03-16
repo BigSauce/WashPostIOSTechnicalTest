@@ -78,7 +78,20 @@
     }
     
     return [self initWithDictionary:jsonDict];
+}
+
+/// Returns string representation of date property or empty string if date property is nil.
+- (NSString *)stringRepresentationForDate {
     
+    if (!self.date)
+        return @"";
+    
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSString *dateString = [dateFormatter stringFromDate:self.date];
+    
+    return dateString;
 }
 
 @end

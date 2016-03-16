@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ArticlePost.h"
+
 
 /// ArticlePostFetcher is responsible for retrieving article posts from the Washington Post API.
 @interface ArticlePostFetcher : NSObject
@@ -17,6 +19,6 @@
  *  @param success block invoked upon successful retrieval and parsing of article posts (optional)
  *  @param failure block invoked upon failure to retrieve article posts
  **/
-+ (void)fetchArticlePostsWithSuccess:(void (^)(NSArray *articlePosts))success failure:(void (^)(NSError *error))failure;
++ (void)fetchArticlePostsWithSuccess:(void (^)(NSArray<ArticlePost *> *articlePosts))success failure:(void (^)(NSError *error))failure;
 
 @end
