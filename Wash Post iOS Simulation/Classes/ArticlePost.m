@@ -47,16 +47,14 @@
     if (self)
     {
         // a bit of pre-configuring prior to assignment of properties
-        NSString *contentString = (NSString *) dictionary[@"content"];
         
         NSString *dateString = (NSString *) dictionary[@"date"];
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-        
+        dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
         
         self.postId = (NSNumber *) dictionary[@"id"];
         self.title = (NSString *) dictionary[@"title"];
-        self.content = [[NSMutableAttributedString alloc] initWithString:contentString];
+        self.content = (NSString *) dictionary[@"content"];
         self.excerpt = (NSString *) dictionary[@"excerpt"];
         self.date = [dateFormatter dateFromString:dateString];
         
@@ -87,7 +85,7 @@
         return @"";
     
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    dateFormatter.dateStyle = NSDateFormatterFullStyle;
     
     NSString *dateString = [dateFormatter stringFromDate:self.date];
     

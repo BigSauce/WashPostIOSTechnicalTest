@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSNumber *postId;
 
 @property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSMutableAttributedString *content;
+@property (strong, nonatomic) NSString *content;
 @property (strong, nonatomic) NSString *excerpt;
 @property (strong, nonatomic) NSDate *date;
 

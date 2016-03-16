@@ -12,7 +12,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end
@@ -37,7 +37,10 @@
 - (void)refreshUI {
     
     self.titleLabel.text = self.articlePost.title;
-    self.contentLabel.attributedText = self.articlePost.content;
+    
+    NSAttributedString *attributedContent = [[NSAttributedString alloc] initWithData:[self.articlePost.content dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    
+    self.contentTextView.attributedText = attributedContent;
     self.dateLabel.text = [self.articlePost stringRepresentationForDate];
     
     self.navigationItem.title = self.articlePost.title;

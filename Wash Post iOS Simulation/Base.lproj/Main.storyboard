@@ -10,40 +10,41 @@
         <scene sceneID="bt6-Tl-QeJ">
             <objects>
                 <tableViewController id="uG5-dI-YUf" customClass="ArticlePostsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWN-Qk-mHV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWN-Qk-mHV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArticlePostCell" rowHeight="70" id="jDC-Gt-XVA" customClass="ArticlePostCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArticlePostCell" rowHeight="129" id="jDC-Gt-XVA" customClass="ArticlePostCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jDC-Gt-XVA" id="rNN-LR-acO">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-WS-s5a">
-                                            <rect key="frame" x="16" y="37" width="542" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaG-DC-Qn1">
+                                            <rect key="frame" x="16" y="8" width="535" height="87"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-WS-s5a">
+                                            <rect key="frame" x="16" y="99" width="535" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="pVl-uF-g71"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="11"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaG-DC-Qn1">
-                                            <rect key="frame" x="16" y="8" width="542" height="21"/>
-                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="XaG-DC-Qn1" firstAttribute="leading" secondItem="rNN-LR-acO" secondAttribute="leadingMargin" constant="8" id="IJw-tB-pHV"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="XaG-DC-Qn1" secondAttribute="trailing" constant="8" id="QJQ-5p-GAr"/>
-                                        <constraint firstItem="Eax-WS-s5a" firstAttribute="top" secondItem="XaG-DC-Qn1" secondAttribute="bottom" constant="8" id="fPV-3d-2Wm"/>
+                                        <constraint firstItem="Eax-WS-s5a" firstAttribute="top" secondItem="XaG-DC-Qn1" secondAttribute="bottom" constant="4" id="fPV-3d-2Wm"/>
                                         <constraint firstItem="Eax-WS-s5a" firstAttribute="leading" secondItem="rNN-LR-acO" secondAttribute="leadingMargin" constant="8" id="hmD-gO-JyT"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Eax-WS-s5a" secondAttribute="trailing" constant="8" id="kud-tn-40T"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Eax-WS-s5a" secondAttribute="bottom" id="mLe-5Y-FsS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Eax-WS-s5a" secondAttribute="trailing" constant="269" id="re0-90-iKu"/>
                                         <constraint firstAttribute="topMargin" secondItem="XaG-DC-Qn1" secondAttribute="top" id="uJo-LH-SN9"/>
                                     </constraints>
@@ -82,54 +83,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snk-Dj-4qC">
-                                <rect key="frame" x="20" y="50" width="551" height="116"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="116" id="pu1-Y1-mOA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqy-MN-er9">
-                                <rect key="frame" x="20" y="191" width="550" height="21"/>
+                                <rect key="frame" x="20" y="138" width="550" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ebj-Gc-LMs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="11"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-qg-cPH">
-                                <rect key="frame" x="20" y="230" width="560" height="356"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89g-Ys-9qg">
+                                <rect key="frame" x="20" y="167" width="560" height="413"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Label">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="AmericanTypewriter"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="14" name="AmericanTypewriter"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snk-Dj-4qC">
+                                <rect key="frame" x="20" y="50" width="551" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="pu1-Y1-mOA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="snk-Dj-4qC" firstAttribute="top" secondItem="Wgr-JR-aVb" secondAttribute="bottom" constant="30" id="3h8-9v-xeG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="l3T-qg-cPH" secondAttribute="leading" id="6Ll-Oz-HUu"/>
-                            <constraint firstItem="fqy-MN-er9" firstAttribute="top" secondItem="snk-Dj-4qC" secondAttribute="bottom" constant="25" id="ISC-rm-SoB"/>
-                            <constraint firstItem="l3T-qg-cPH" firstAttribute="top" secondItem="fqy-MN-er9" secondAttribute="bottom" constant="18" id="IwN-HS-jhl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l3T-qg-cPH" secondAttribute="trailing" id="KTf-tM-md5"/>
+                            <constraint firstItem="fqy-MN-er9" firstAttribute="top" secondItem="snk-Dj-4qC" secondAttribute="bottom" constant="8" id="ISC-rm-SoB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="89g-Ys-9qg" secondAttribute="trailing" id="Mm4-B3-1oy"/>
                             <constraint firstAttribute="leadingMargin" secondItem="fqy-MN-er9" secondAttribute="leading" id="OQD-m8-5Gk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="89g-Ys-9qg" secondAttribute="leading" id="Wxd-Pu-qxQ"/>
+                            <constraint firstItem="RZQ-7O-JiU" firstAttribute="top" secondItem="89g-Ys-9qg" secondAttribute="bottom" constant="20" id="X3O-Lc-qrC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fqy-MN-er9" secondAttribute="trailing" constant="10" id="c6X-9K-UJN"/>
-                            <constraint firstItem="RZQ-7O-JiU" firstAttribute="top" secondItem="l3T-qg-cPH" secondAttribute="bottom" constant="14" id="gpV-1o-Ngi"/>
+                            <constraint firstItem="89g-Ys-9qg" firstAttribute="top" secondItem="fqy-MN-er9" secondAttribute="bottom" constant="8" id="dhG-gs-QY1"/>
                             <constraint firstAttribute="leadingMargin" secondItem="snk-Dj-4qC" secondAttribute="leading" id="mH2-er-AD9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="snk-Dj-4qC" secondAttribute="trailing" constant="9" id="xrR-Ti-HSC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contentLabel" destination="l3T-qg-cPH" id="vMM-xV-C0q"/>
+                        <outlet property="contentTextView" destination="89g-Ys-9qg" id="SrF-yc-Sug"/>
                         <outlet property="dateLabel" destination="fqy-MN-er9" id="EjZ-Ky-Irm"/>
                         <outlet property="titleLabel" destination="snk-Dj-4qC" id="Vae-2m-Y8R"/>
                     </connections>
