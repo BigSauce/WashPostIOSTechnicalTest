@@ -9,7 +9,6 @@ Did not have time to:
 * implement sorting
 * place the content of the article post in a scroll view and dynamically resize its content
 * display the markup for the content appropriately
-* 
 
 When you pull the code, you will have to run `pod install` within the project's directory to install AFNetworking.  Then open the workspace created from running `pod install` and build from there.
 
